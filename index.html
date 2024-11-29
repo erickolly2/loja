@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Roupas do Thuthuco</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    header h1 {
+        margin: 0;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+    
+    
+    .background {
+        background-image: url('principal.jpeg'); 
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+    }
+    
+    .content p {
+        font-size: 24px;
+        font-weight: bold;
+        background-color: rgba(0, 0, 0, 0.5); 
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    
+    .login-form {
+        background-color: #f4f4f4;
+        padding: 30px;
+        max-width: 400px;
+        margin: 50px auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .login-form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .login-form label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .login-form input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    .login-form button {
+        width: 100%;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .login-form button:hover {
+        background-color: #555;
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <h1>Loja de Roupas do Thuthuco</h1>
+        <nav>
+            <ul>
+                <li><a href="camisas4.html">Camisas e bermudas</a></li>
+                <li><a href="esportivos.html">Esportivos</a></li>
+                <li><a href="tenis.html">Sapato social</a></li>
+                <li><a href="Curriculo.html">Curriculo</a></li>
+                <li><a href="Cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  
+    <section class="background">
+        <div class="content">
+            <p>Bem-vindo à nossa loja de roupas. Encontre as melhores opções para o seu estilo!</p>
+        </div>
+    </section>
+    <section class="login-form">
+        <h2>Login</h2>
+        <form action="login.php" method="POST">
+            <label for="usuario">Usuário:</label>
+            <input type="text" id="usuario" name="usuario" required><br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required><br>
+
+            <button type="submit">Entrar</button>
+        </form>
+    </section>
+</body>
+</html>
